@@ -1,5 +1,5 @@
-import schema from './schema';
 import { handlerPath } from '@libs/handler-resolver';
+import schema from './schema';
 
 export default {
   handler: `${handlerPath(__dirname)}/handler.main`,
@@ -10,7 +10,7 @@ export default {
         path: 'hello',
         request: {
           schemas: {
-            'application/json': schema,
+            'application/json': schema
           },
         },
       },
